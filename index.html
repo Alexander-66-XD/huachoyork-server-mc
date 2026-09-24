@@ -3,41 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HuachoYork Minecraft</title>
+  <title>HuachoYork Minecraft Server</title>
   <style>
     body {
-      font-family: system-ui, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-      padding: 40px 20px;
-      background-color: #121212;
+      padding: 30px 15px;
+      background-color: #0f141c;
       color: #ffffff;
+      margin: 0;
     }
     .card {
-      background: #1e1e1e;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 400px;
+      background: #1b222d;
+      padding: 25px;
+      border-radius: 16px;
+      max-width: 380px;
       margin: 0 auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      border: 1px solid #2a3546;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+    }
+    h2 {
+      margin: 10px 0 5px;
+      color: #55ff55;
+      font-size: 24px;
+    }
+    p {
+      color: #a0aec0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .info-box {
+      background: #121721;
+      border: 1px dashed #3b4a6b;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-family: monospace;
+      font-size: 14px;
     }
     .btn {
       display: block;
-      background-color: #2e7d32;
+      background: linear-gradient(135deg, #2e7d32, #4caf50);
       color: white;
-      padding: 16px;
+      padding: 14px;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
-      border-radius: 8px;
-      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+      transition: transform 0.2s;
+    }
+    .btn:active {
+      transform: scale(0.97);
     }
   </style>
 </head>
 <body>
+
   <div class="card">
+    <img class="icon" src="https://m.media-amazon.com/images/I/61S-S+I62bL.png" alt="Minecraft Icon">
     <h2>Servidor HuachoYork</h2>
-    <p>Haz clic en el botón para abrir Minecraft y agregar el servidor directamente.</p>
-    <a class="btn" href="minecraft://?addExternalServer=HuachoYork|147.185.221.213:40456">Entrar a Minecraft</a>
+    <p>¡Entra a nuestro servidor de Minecraft Bedrock con un solo clic!</p>
+
+    <div class="info-box">
+      <strong>IP:</strong> 147.185.221.213<br>
+      <strong>Puerto:</strong> 40456
+    </div>
+
+    <a class="btn" href="minecraft://?addExternalServer=HuachoYork|147.185.221.213:40456">
+      🚀 Entrar a Minecraft
+    </a>
   </div>
+
 </body>
 </html>
